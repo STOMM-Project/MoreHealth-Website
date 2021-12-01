@@ -1,5 +1,12 @@
 # MoreHealth Africca website info
 
+### Site Inspo:
+http://Alteducation.com
+</br>
+http://Itrainafrica.com
+</br>
+http://VaziLegal.com
+
 **Slogan: ...more health, more life** 
 
 ## Vision
