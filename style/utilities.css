@@ -17,6 +17,18 @@ a {
   border-bottom: 1px solid var(--primary-color);
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  background: var(--primary-color);
+}
+
+.btn:hover {
+  background: var(--bg-light);
+  color: var(--primary-color);
+}
+
 /* Animation */
 .animate {
   animation: animate infinite 0.4s alternate ease-in-out;
