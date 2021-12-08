@@ -30,6 +30,10 @@ a {
   color: var(--primary-color);
 }
 
+section {
+  padding: 2rem;
+}
+
 /* Animation */
 .animate {
   animation: animate infinite 0.4s alternate ease-in-out;
