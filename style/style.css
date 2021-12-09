@@ -193,14 +193,14 @@ body {
   margin: 4rem;
 }
 
-.values-content {
+.animation-content {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.values-content li {
+.animation-content li {
   background: var(--bg-dark-2);
   padding: 0.5rem 1rem;
   margin: 1rem;
@@ -209,17 +209,17 @@ body {
   font-size: 0.9rem;
 }
 
-.values-content li:hover {
+.animation-content li:hover {
   background: var(--primary-color);
 }
 
-.values-content li i {
+.animation-content li i {
   color: var(--primary-color);
   margin-right: 0.3rem;
   transition: 0.5s ease-in-out;
 }
 
-.values-content li:hover i {
+.animation-content li:hover i {
   color: var(--bg-dark-2);
 }
 
@@ -264,6 +264,60 @@ body {
 
 .team-content .card:hover img {
   transform: translateY(-8px);
+}
+
+/* Projects */
+.projects .programs {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .programs a {
+  font-size: 0.9rem;
+}
+
+/* Footer */
+#footer {
+  background: var(--bg-dark-2);
+  padding: 2rem 2rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#footer ul li {
+  margin: 0.1rem 0;
+}
+
+#footer ul a {
+  color: gray;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: 0.2s ease-in-out;
+}
+
+#footer ul a:hover {
+  color: #fff;
+}
+
+#footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer p {
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 /* Media Queries */
