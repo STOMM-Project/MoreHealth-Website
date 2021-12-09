@@ -203,6 +203,7 @@ body {
 .animation-content li {
   background: var(--bg-dark-2);
   padding: 0.5rem 1rem;
+  text-align: center;
   margin: 1rem;
   border-radius: 20px;
   transition: 0.4s ease-in-out;
@@ -326,18 +327,42 @@ body {
     transition: 0.2s ease-in-out;
     font-size: 3rem;
   }
+
+  .hero-content.hero-content-about h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--primary-color);
+  }
 }
+
+@media (max-width: 800px) {
+  .header {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar .logo {
     font-size: 1rem;
   }
 
   .hero-content h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+
+  .animation-content li {
+    margin: 0.5rem;
+    font-size: 0.8rem;
   }
 }
-@media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 2rem;
+
+@media (max-width: 700px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .team-content .card img {
+    transition: 0.4s ease-in-out;
+    border-radius: 20px;
   }
 }

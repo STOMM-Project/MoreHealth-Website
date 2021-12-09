@@ -81,3 +81,10 @@ section .header p {
     transform: translateX(0) translateY(0);
   }
 }
+
+/* Media Queries */
+@media (max-width: 800px) {
+  section .header h2 {
+    font-size: 2rem;
+  }
+}
