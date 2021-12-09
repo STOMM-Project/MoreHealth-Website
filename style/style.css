@@ -186,27 +186,27 @@ body {
 }
 
 .values {
-  margin: 2rem;
-}
-
-.values h2 {
-  text-align: center;
-  font-family: "Brandon", sans-serif;
-  font-size: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  margin: 4rem;
 }
 
 .values-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: 2rem;
-  grid-gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .values-content li {
   background: var(--bg-dark-2);
   padding: 0.5rem 1rem;
+  margin: 1rem;
   border-radius: 20px;
   transition: 0.4s ease-in-out;
+  font-size: 0.9rem;
 }
 
 .values-content li:hover {
@@ -221,6 +221,49 @@ body {
 
 .values-content li:hover i {
   color: var(--bg-dark-2);
+}
+
+/* Team */
+.team {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  row-gap: 1rem;
+  column-gap: 0.3rem;
+}
+
+.team-content .card {
+  padding: 1rem;
+}
+
+.team-content .card .bio {
+  text-align: center;
+  font-weight: 200;
+  margin: 0.5rem;
+}
+
+.team-content .card .bio h3 {
+  font-size: 0.9rem;
+}
+
+.team-content .card .bio p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: gray;
+}
+
+.team-content .card img {
+  width: 100%;
+  transition: 0.4s ease-in-out;
+  border-radius: 20px;
+}
+
+.team-content .card:hover img {
+  transform: translateY(-8px);
 }
 
 /* Media Queries */

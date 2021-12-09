@@ -34,6 +34,25 @@ section {
   padding: 2rem;
 }
 
+section .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+}
+
+section .header h2 {
+  font-size: 2.5rem;
+  font-family: "Brandon", sans-serif;
+}
+
+section .header p {
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
 /* Animation */
 .animate {
   animation: animate infinite 0.4s alternate ease-in-out;
