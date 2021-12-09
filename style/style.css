@@ -193,33 +193,34 @@ body {
   margin: 4rem;
 }
 
-.values-content {
+.animation-content {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.values-content li {
+.animation-content li {
   background: var(--bg-dark-2);
   padding: 0.5rem 1rem;
+  text-align: center;
   margin: 1rem;
   border-radius: 20px;
   transition: 0.4s ease-in-out;
   font-size: 0.9rem;
 }
 
-.values-content li:hover {
+.animation-content li:hover {
   background: var(--primary-color);
 }
 
-.values-content li i {
+.animation-content li i {
   color: var(--primary-color);
   margin-right: 0.3rem;
   transition: 0.5s ease-in-out;
 }
 
-.values-content li:hover i {
+.animation-content li:hover i {
   color: var(--bg-dark-2);
 }
 
@@ -266,24 +267,102 @@ body {
   transform: translateY(-8px);
 }
 
+/* Projects */
+.projects .programs {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .programs a {
+  font-size: 0.9rem;
+}
+
+/* Footer */
+#footer {
+  background: var(--bg-dark-2);
+  padding: 2rem 2rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#footer ul li {
+  margin: 0.1rem 0;
+}
+
+#footer ul a {
+  color: gray;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: 0.2s ease-in-out;
+}
+
+#footer ul a:hover {
+  color: #fff;
+}
+
+#footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer p {
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 /* Media Queries */
 @media (max-width: 1000px) {
   .hero-content h2 {
     transition: 0.2s ease-in-out;
     font-size: 3rem;
   }
+
+  .hero-content.hero-content-about h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--primary-color);
+  }
 }
+
+@media (max-width: 800px) {
+  .header {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar .logo {
     font-size: 1rem;
   }
 
   .hero-content h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+
+  .animation-content li {
+    margin: 0.5rem;
+    font-size: 0.8rem;
   }
 }
-@media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 2rem;
+
+@media (max-width: 700px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .team-content .card img {
+    transition: 0.4s ease-in-out;
+    border-radius: 20px;
   }
 }
