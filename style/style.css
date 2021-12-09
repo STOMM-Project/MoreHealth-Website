@@ -175,6 +175,7 @@ body {
   font-size: 0.9rem;
 }
 
+/* Vision & Mission */
 .about-content .vision {
   background: var(--primary-color);
   color: var(--text-dark);
@@ -182,6 +183,44 @@ body {
 
 .about-content .mission {
   background: var(--bg-dark-2);
+}
+
+.values {
+  margin: 2rem;
+}
+
+.values h2 {
+  text-align: center;
+  font-family: "Brandon", sans-serif;
+  font-size: 2.3rem;
+}
+
+.values-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+  grid-gap: 1rem;
+}
+
+.values-content li {
+  background: var(--bg-dark-2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.values-content li:hover {
+  background: var(--primary-color);
+}
+
+.values-content li i {
+  color: var(--primary-color);
+  margin-right: 0.3rem;
+  transition: 0.5s ease-in-out;
+}
+
+.values-content li:hover i {
+  color: var(--bg-dark-2);
 }
 
 /* Media Queries */

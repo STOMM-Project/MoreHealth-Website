@@ -48,3 +48,17 @@ section {
     transform: translateX(0.4rem);
   }
 }
+
+.animate-two {
+  animation: animate-two infinite 1.5s alternate ease-in-out;
+}
+
+@keyframes animate-two {
+  from {
+    transform: translateX(0.1rem) translateY(-0.7rem);
+  }
+
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
