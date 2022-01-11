@@ -1,4 +1,4 @@
-# MoreHealth Africca website info
+# MoreHealth Africa website info
 
 **Slogan: ...more health, more life**
 
